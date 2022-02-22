@@ -22,8 +22,14 @@ describe('Our first suite', () => {
         //by Class value
         cy.get('[class="input-full-width size-medium shape-rectangle"]')
 
-        //by Tag name and Attibute
+        //by Tag name and Attribute with value
         cy.get('input[placeholder="Email"]')
+
+        //by two different atributes 
+        cy.get('[placeholder="Email"][type="email"]')
+
+        //by tag name, Attribute with value, ID and class name
+        cy.get('input[placeholder="Email"]#inputEmail1.input-full-width')
 
     })
 })
