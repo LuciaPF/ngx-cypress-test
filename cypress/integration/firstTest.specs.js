@@ -2,11 +2,11 @@
 
 describe('Our first suite', () => {
 
-    cy.visit('/')
-    cy.contains('Forms').click()
-    cy.contains('Forms Layouts').click()
-
     it('first test', () => {
+
+        cy.visit('/')
+        cy.contains('Forms').click()
+        cy.contains('Form Layouts').click()
 
         //by Tag Name
         cy.get('input')
