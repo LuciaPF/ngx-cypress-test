@@ -2,6 +2,10 @@
 
 describe('Our first suite', () => {
 
+    cy.visit('/')
+    cy.contains('Forms').click()
+    cy.contains('Forms Layouts').click()
+
     it('first test', () => {
 
         //by Tag Name
@@ -30,6 +34,9 @@ describe('Our first suite', () => {
 
         //by tag name, Attribute with value, ID and class name
         cy.get('input[placeholder="Email"]#inputEmail1.input-full-width')
+
+        //The most recommended way by Cypress
+        cy.get('[data-cy="imputEmail1"]')
 
     })
 })
