@@ -39,4 +39,13 @@ describe('Our first suite', () => {
         cy.get('[data-cy="imputEmail1"]')
 
     })
+
+    it.only('second test', () => {
+
+        cy.visit('/')
+        cy.contains('Forms').click()
+        cy.contains('Form Layouts').click()
+
+    })
+
 })
