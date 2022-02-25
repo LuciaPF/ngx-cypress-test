@@ -67,6 +67,7 @@ it.only('then and wraps methods', () => {
     cy.contains('Form Layouts').click()
 
     cy.contains('nb-card', 'Using the Grid').find('[for="inputEmail1"]').should('contain','Email')
+    cy.contains('nb-card', 'Using the Grid').find('[for="inputPassword2"]').should('contain','Password')
 
 })
 })
