@@ -40,7 +40,7 @@ describe('Our first suite', () => {
 
     })
 
-    it.only('second test', () => {
+    it('second test', () => {
 
         cy.visit('/')
         cy.contains('Forms').click()
@@ -61,4 +61,12 @@ describe('Our first suite', () => {
 
     })
 
+it.only('then and wraps methods', () => {
+    cy.visit('/')
+    cy.contains('Forms').click()
+    cy.contains('Form Layouts').click()
+
+    cy.contains('nb-card', 'Using the Grid').find('[for="inputEmail1"]')
+
+})
 })
