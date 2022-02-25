@@ -57,6 +57,7 @@ describe('Our first suite', () => {
         .find('nb-checkbox')
         .click
        
+        cy.contains('nb-card', 'Horizontal form').find('[type="email"]') 
 
     })
 
